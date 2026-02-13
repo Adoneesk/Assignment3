@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 file_dir = "crime.csv"
-crime_df = pd.read_csv(file_dir)
-violent_df = crime_df[["ViolentCrimesPerPop"]]
+crime_csv = pd.read_csv(file_dir)
+violent_df = crime_csv[["ViolentCrimesPerPop"]]
 mean = violent_df.mean()
 median = violent_df.median()
 sd = violent_df.std()
