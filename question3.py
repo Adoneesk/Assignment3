@@ -8,10 +8,10 @@ x = kidney_disease_csv.drop(columns=["classification"])
 y = kidney_disease_csv["classification"]
 
 split = train_test_split(x, y, test_size=0.3, random_state=42)
-x_test = split[0]
-x_train = split[1]
-y_test = split[2]
-y_train = split[3]
+x_test = split[1]
+x_train = split[0]
+y_test = split[3]
+y_train = split[2]
 
 """
 Training and Testing on the Same Model:
