@@ -34,3 +34,26 @@ best_accuracy = max(results, key = lambda x:x[1])
 print("Best K value: ", most_valuable_value)
 print("Best accuracy: ", best_accuracy)
 
+
+"""
+K size:
+- When the k-value is very large, the model tends towards a
+simpler form because it looks for less neighbors which
+leads to detailed and irregular decision. On the other
+hand, choosing a very small k-value allows for a simple
+model as it's decisions are less sensitive to the behavior
+of k neighbors.
+
+Small K:
+- When a small k-value is present, it allows for very little
+neighbors which causes the model's decisions to be extremeley
+sensitive (whether there's incorrectly placed data or simply
+just a rare and unwanted case). This innevitably causes for
+overfitting.
+
+Large K:
+- When a large k-value is present, it allows for unnecessary
+generalization. Causing for an underfitted model.
+
+"""
+
